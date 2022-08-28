@@ -1,0 +1,49 @@
+
+:root{
+    --left:43;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.paddle{
+    width: 16vw;
+    height: 3vh;
+    background-color: blue;
+    position: absolute;
+    text-align: center;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    color: white;
+}
+#top-paddle{
+    
+    top: 0;
+    left:calc(var(--left) *1vw);
+}
+#bottom-paddle{
+    bottom: 0;
+    left: calc(var(--left) *1vw);
+}
+#ball{
+    --x:50;
+    --y:50;
+    width: 1.8vw;
+    height: 3.8vh;
+    border-radius: 50%;
+    background-color:black;
+    position: absolute;
+    top: calc(var(--x)* 1vh);
+    left: calc(var(--y)* 1vw);
+}
+#score_container{
+    position: absolute;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: blueviolet;
+
+}
+
